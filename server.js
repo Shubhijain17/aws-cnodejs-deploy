@@ -13,7 +13,8 @@ app.get('/api/get_user_details', (req, res) => {
         user:{
         name: "shubhi",
         age:22,
-        contact:23345643
+        contact:23345643,
+        address:"bhopal"
         },name
     });
 });
