@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-require("dotenv").config
+require("dotenv").config()
 
 let port = process.env.PORT
 let name = process.env.NAME
