@@ -1,27 +1,25 @@
 const express = require("express")
 const app = express()
-// app.get('/api/get',(req,res)=>{
-//     res.send({message:"hello this is CICd server"})
-// })
-// app.listen(8000,()=>{
-//     console.log('srerver is runing🐿')
-// })
+require("dotenv").config
 
-
+let port = process.env.PORT
+let name = process.env.NAME
 
 app.get('/api/get', (req, res) => {
     res.send({ message: "hello this is CICd server" });
 });
 app.get('/api/get_user_details', (req, res) => {
     res.send({
+        user:{
         name: "shubhi",
         age:22,
         contact:23345643
+        },name
     });
 });
 
 
-app.listen(8000, (err) => {
+app.listen(port, (err) => {
     if (err) {
         console.error("Error starting server:", err);
     } else {
