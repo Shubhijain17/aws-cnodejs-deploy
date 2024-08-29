@@ -14,7 +14,8 @@ app.get('/api/get_user_details', (req, res) => {
         name: "shubhi",
         age:22,
         contact:23345643,
-        address:"bhopal"
+        address:"bhopal",
+        deg:"micro"
         },name
     });
 });
