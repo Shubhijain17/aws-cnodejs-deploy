@@ -26,9 +26,6 @@ app.get('/api/get_users', (req, res) => {
     const users = [
         { id: 1, name: "shubhi", age: 22, contact: 12345678, address: "bhopal", role: "Backend Developer" },
     ];
-    const role=[
-        { id: 1, name: "shubhi", age: 22, contact: 12345678, address: "bhopal", role: "Backend Developer" },
-    ]
     
     res.send({users, role,});
 });
