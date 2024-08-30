@@ -27,7 +27,7 @@ app.get('/api/get_users', (req, res) => {
         { id: 1, name: "shubhi", age: 22, contact: 12345678, address: "bhopal", role: "Backend Developer" },
     ];
     
-    res.send({users, role,});
+    res.send({users});
 });
 
 app.listen(port, (err) => {
